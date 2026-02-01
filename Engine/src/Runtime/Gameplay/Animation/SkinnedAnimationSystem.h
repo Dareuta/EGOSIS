@@ -11,6 +11,7 @@
 #include "Runtime/Importing/FbxAnimation.h"
 #include "Runtime/Foundation/Logger.h"
 #include "Runtime/Gameplay/Animation/AdvancedAnimationComponent.h"
+#include "Runtime/Gameplay/Animation/BonePhysicsOverride.h"
 #include "Runtime/Gameplay/Sockets/SocketComponent.h"
 #include "Runtime/ECS/Components/TransformComponent.h"
 
@@ -89,27 +90,73 @@ namespace Alice
                 }
 
                 const int clipCount = (int)rt.anim.GetNames().size();
-                if (clipCount <= 0)
-                    continue;
+                const bool hasClips = (clipCount > 0);
 
-                // 상태 보정
-                if (animComp->clipIndex < 0) animComp->clipIndex = 0;
-                if (animComp->clipIndex >= clipCount) animComp->clipIndex = clipCount - 1;
-                if (animComp->speed < 0.0f) animComp->speed = 0.0f;
+                if (hasClips)
+                {
+                    // 상태 보정
+                    if (animComp->clipIndex < 0) animComp->clipIndex = 0;
+                    if (animComp->clipIndex >= clipCount) animComp->clipIndex = clipCount - 1;
+                    if (animComp->speed < 0.0f) animComp->speed = 0.0f;
 
-                // 시간 진행(엔티티 단위)
-                if (animComp->playing && dtSec > 0.0)
-                    animComp->timeSec += dtSec * (double)animComp->speed;
+                    // 시간 진행(엔티티 단위)
+                    if (animComp->playing && dtSec > 0.0)
+                        animComp->timeSec += dtSec * (double)animComp->speed;
 
-                rt.anim.SetCurrentIndex(animComp->clipIndex);
-                rt.anim.SetTimeSec(animComp->timeSec);
+                    rt.anim.SetCurrentIndex(animComp->clipIndex);
+                    rt.anim.SetTimeSec(animComp->timeSec);
 
-                // 팔레트 계산(전치 없음: ForwardRenderSystem에서 전치해서 업로드)
-                rt.anim.BuildCurrentPaletteFloat4x4(animComp->palette);
+                    // 팔레트 계산(전치 없음: ForwardRenderSystem에서 전치해서 업로드)
+                    rt.anim.BuildCurrentPaletteFloat4x4(animComp->palette);
+                }
+                else
+                {
+                    const std::string entityName = world.GetEntityName(entityId);
+                    if (entityName != "TiaRibbon") // TODO: 나중에 유연하게 바꿔줘야함, 일단 리본에만 적용시킬려고 하드코딩함
+                        continue;
+
+                    // 애니메이션 클립이 없어도 바인드 포즈 팔레트를 만들어 스킨ning을 유지한다.
+                    const auto& boneNames = mesh->sourceModel->GetBoneNames();
+                    const auto& boneOffsets = mesh->sourceModel->GetBoneOffsets();
+                    const auto& nodeIndexOfName = mesh->sourceModel->GetNodeIndexOfName();
+
+                    // 바인드 포즈 글로벌 행렬 평가 (채널 없음 -> node->mTransformation 기반)
+                    rt.anim.EvaluateGlobals(mesh->sourceModel->GetScenePtr(), nodeIndexOfName, rt.globals);
+
+                    static const DirectX::XMFLOAT4X4 s_identity{
+                        1,0,0,0,
+                        0,1,0,0,
+                        0,0,1,0,
+                        0,0,0,1
+                    };
+
+                    animComp->palette.assign(boneNames.size(), s_identity);
+                    const DirectX::XMMATRIX globalInv = DirectX::XMLoadFloat4x4(&mesh->sourceModel->GetGlobalInverse());
+
+                    for (size_t bi = 0; bi < boneNames.size(); ++bi)
+                    {
+                        auto itN = nodeIndexOfName.find(boneNames[bi]);
+                        if (itN == nodeIndexOfName.end())
+                            continue;
+
+                        const int nodeIdx = itN->second;
+                        if (nodeIdx < 0 || (size_t)nodeIdx >= rt.globals.size())
+                            continue;
+
+                        DirectX::XMMATRIX G = DirectX::XMLoadFloat4x4(&rt.globals[(size_t)nodeIdx]);
+                        DirectX::XMMATRIX Off = DirectX::XMLoadFloat4x4(&boneOffsets[bi]);
+                        DirectX::XMMATRIX skin = DirectX::XMMatrixMultiply(DirectX::XMMatrixMultiply(globalInv, G), Off);
+                        DirectX::XMStoreFloat4x4(&animComp->palette[bi], skin);
+                    }
+                }
+
+                // Row-major로 변환 (렌더 시스템에서 다시 전치)
 				for (auto& mat : animComp->palette) {
 					DirectX::XMMATRIX m = DirectX::XMMatrixTranspose(DirectX::XMLoadFloat4x4(&mat));
 					DirectX::XMStoreFloat4x4(&mat, m);
 				}
+
+                BonePhysicsOverride::Apply(world, entityId, *mesh->sourceModel, animComp->palette);
 
                 // SocketComponent.sockets[].world 갱신 (SkinnedAnimation 사용 엔티티)
                 if (auto* sockets = world.GetComponent<SocketComponent>(entityId))
@@ -120,7 +167,17 @@ namespace Alice
                         if (world.GetComponent<TransformComponent>(entityId))
                             worldRow = world.ComputeWorldMatrix(entityId);
 
-                        rt.anim.EvaluateGlobalsAtFull(animComp->clipIndex, animComp->timeSec, rt.globals);
+                        if (hasClips)
+                        {
+                            rt.anim.EvaluateGlobalsAtFull(animComp->clipIndex, animComp->timeSec, rt.globals);
+                        }
+                        else if (rt.globals.empty())
+                        {
+                            rt.anim.EvaluateGlobals(mesh->sourceModel->GetScenePtr(),
+                                                    mesh->sourceModel->GetNodeIndexOfName(),
+                                                    rt.globals);
+                        }
+
                         if (!rt.globals.empty())
                         {
                             const auto& nodeIndexOfName = mesh->sourceModel->GetNodeIndexOfName();

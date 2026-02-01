@@ -10,6 +10,7 @@
 
 #include "Runtime/Gameplay/Animation/AdvancedAnimator.h"
 #include "Runtime/Gameplay/Animation/AdvancedAnimationComponent.h"
+#include "Runtime/Gameplay/Animation/BonePhysicsOverride.h"
 #include "Runtime/Rendering/Components/SkinnedAnimationComponent.h"
 #include "Runtime/Rendering/Components/SkinnedMeshComponent.h"
 #include "Runtime/ECS/Components/TransformComponent.h"
@@ -620,6 +621,8 @@ namespace Alice
             DirectX::XMMATRIX rowMajor = DirectX::XMMatrixTranspose(finals[i]);
             DirectX::XMStoreFloat4x4(&animComp.palette[i], rowMajor);
         }
+
+        BonePhysicsOverride::Apply(world, id, *mesh->sourceModel, animComp.palette);
 
         skinned.boneMatrices = animComp.palette.data();
         skinned.boneCount = static_cast<std::uint32_t>(animComp.palette.size());

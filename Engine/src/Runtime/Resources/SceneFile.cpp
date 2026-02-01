@@ -45,6 +45,7 @@
 #include "Runtime/Gameplay/Combat/WeaponTraceComponent.h"
 #include "Runtime/Gameplay/Animation/AdvancedAnimationComponent.h"
 #include "Runtime/Gameplay/Animation/AnimBlueprintComponent.h"
+#include "Runtime/Gameplay/Animation/BonePhysicsProxyComponent.h"
 #include "Runtime/Gameplay/Sockets/SocketComponent.h"
 #include "Runtime/Gameplay/Sockets/SocketAttachmentComponent.h"
 #include "Runtime/Rendering/Components/PostProcessVolumeComponent.h"
@@ -654,6 +655,14 @@ namespace Alice
                 outEntity["Socket"] = SocketSerialization::SocketComponentToJson(*socketComp);
             }
 
+            if (const auto* boneProxy = world.GetComponent<BonePhysicsProxyComponent>(id); boneProxy)
+            {
+                rttr::instance inst = const_cast<BonePhysicsProxyComponent&>(*boneProxy);
+                JsonRttr::json obj = JsonRttr::ToJsonObject(inst);
+                obj["ownerGuid"] = std::to_string(boneProxy->ownerGuid);
+                outEntity["BonePhysicsProxy"] = obj;
+            }
+
             if (const auto* audio = world.GetComponent<AudioSourceComponent>(id); audio)
             {
                 AudioSourceComponent copy = *audio;
@@ -1094,6 +1103,20 @@ namespace Alice
             {
                 SocketComponent& sc = world.AddComponent<SocketComponent>(id);
                 if (!SocketSerialization::JsonToSocketComponent(*itSocket, sc)) return false;
+            }
+
+            // BonePhysicsProxy (선택)
+            auto itBoneProxy = e.find("BonePhysicsProxy");
+            if (itBoneProxy != e.end() && itBoneProxy->is_object())
+            {
+                BonePhysicsProxyComponent& bp = world.AddComponent<BonePhysicsProxyComponent>(id);
+                if (auto itGuid = itBoneProxy->find("ownerGuid"); itGuid != itBoneProxy->end())
+                    bp.ownerGuid = ParseGuidOrZero(*itGuid);
+
+                JsonRttr::json copy = *itBoneProxy;
+                copy.erase("ownerGuid");
+                rttr::instance inst = bp;
+                if (!JsonRttr::FromJsonObject(inst, copy)) return false;
             }
 
             // Camera (선택)

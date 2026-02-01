@@ -13,6 +13,7 @@
 #include "Runtime/Rendering/Components/SkinnedAnimationComponent.h"
 #include "Runtime/Gameplay/Animation/AdvancedAnimationComponent.h"
 #include "Runtime/Gameplay/Animation/AnimBlueprintComponent.h"
+#include "Runtime/Gameplay/Animation/BonePhysicsProxyComponent.h"
 #include "Runtime/Rendering/Components/CameraComponent.h"
 #include "Runtime/Rendering/Components/CameraFollowComponent.h"
 #include "Runtime/Rendering/Components/CameraSpringArmComponent.h"
@@ -260,6 +261,14 @@ namespace Alice
             .property("ikChains", &AdvancedAnimationComponent::ikChains)
             .property("aim", &AdvancedAnimationComponent::aim)
             .property("sockets", &AdvancedAnimationComponent::sockets);
+
+        rttr::registration::class_<BonePhysicsProxyComponent>("BonePhysicsProxyComponent")
+            .constructor<>()
+            .property("enabled", &BonePhysicsProxyComponent::enabled)
+            .property("ownerGuid", &BonePhysicsProxyComponent::ownerGuid)
+            .property("ownerNameDebug", &BonePhysicsProxyComponent::ownerNameDebug)
+            .property("boneName", &BonePhysicsProxyComponent::boneName)
+            .property("boneIndex", &BonePhysicsProxyComponent::boneIndex);
 
         // AnimParamType enum 등록
         rttr::registration::enumeration<AnimParamType>("AnimParamType")
@@ -1237,6 +1246,7 @@ namespace Alice
         r.Register<SkinnedAnimationComponent>("Skinned Animation", "Rendering");
         r.Register<AdvancedAnimationComponent>("Advanced Animation", "Rendering");
         r.Register<AnimBlueprintComponent>("Anim Blueprint", "Rendering");
+        r.Register<BonePhysicsProxyComponent>("Bone Physics Proxy", "Animation");
         r.Register<SocketComponent>("Socket", "Rendering");
 
         r.Register<CameraComponent>("Camera", "Camera");

@@ -55,7 +55,7 @@
             "SocketAttachment": {
                 "extraPos": {
                     "x": 0.0,
-                    "y": 0.0,
+                    "y": -0.20000000298023224,
                     "z": 0.0
                 },
                 "extraRotRad": {
@@ -76,18 +76,18 @@
             "Transform": {
                 "enabled": true,
                 "position": {
-                    "x": -5.123696327209473,
-                    "y": 1.217545509338379,
-                    "z": -3.6967904567718506
+                    "x": -2.6137447357177734,
+                    "y": 1.0182005167007446,
+                    "z": -10.595847129821777
                 },
                 "rotation": {
-                    "x": -0.07866542041301727,
-                    "y": 2.7344484329223633,
-                    "z": -0.012055215425789356
+                    "x": -0.08458633720874786,
+                    "y": -2.9765920639038086,
+                    "z": -0.011878677643835545
                 },
                 "scale": {
                     "x": 1.0000001192092896,
-                    "y": 0.9999998211860657,
+                    "y": 0.9999997615814209,
                     "z": 0.9999998211860657
                 },
                 "visible": false
@@ -171,19 +171,19 @@
             "Transform": {
                 "enabled": true,
                 "position": {
-                    "x": -5.1202311515808105,
-                    "y": 0.9752702116966248,
-                    "z": -3.708735227584839
+                    "x": -2.616764545440674,
+                    "y": 0.9748016595840454,
+                    "z": -10.59081745147705
                 },
                 "rotation": {
-                    "x": -0.030942969024181366,
-                    "y": 2.8336684703826904,
-                    "z": 0.00140824681147933
+                    "x": -0.03126015141606331,
+                    "y": -2.888127088546753,
+                    "z": 0.0013555123005062342
                 },
                 "scale": {
-                    "x": 1.000000238418579,
-                    "y": 0.9999997019767761,
-                    "z": 1.0000001192092896
+                    "x": 0.9999995827674866,
+                    "y": 0.9999992251396179,
+                    "z": 0.9999994039535522
                 },
                 "visible": false
             },
@@ -266,18 +266,18 @@
             "Transform": {
                 "enabled": true,
                 "position": {
-                    "x": -5.01543664932251,
-                    "y": 0.2983977198600769,
-                    "z": -3.586548328399658
+                    "x": -2.462428092956543,
+                    "y": 0.2982169985771179,
+                    "z": -10.5449857711792
                 },
                 "rotation": {
-                    "x": 0.09253893792629242,
-                    "y": -2.158254384994507,
-                    "z": 2.8619186878204346
+                    "x": 0.09197907894849777,
+                    "y": -1.583013653755188,
+                    "z": 2.8580081462860107
                 },
                 "scale": {
-                    "x": 0.9999995827674866,
-                    "y": 1.0000001192092896,
+                    "x": 0.9999994039535522,
+                    "y": 0.9999999403953552,
                     "z": 0.9999998807907104
                 },
                 "visible": false
@@ -361,19 +361,19 @@
             "Transform": {
                 "enabled": true,
                 "position": {
-                    "x": -5.22126579284668,
-                    "y": 0.2982277274131775,
-                    "z": -3.786604881286621
+                    "x": -2.7439513206481934,
+                    "y": 0.29807353019714355,
+                    "z": -10.599727630615234
                 },
                 "rotation": {
-                    "x": 0.028879350051283836,
-                    "y": 1.3871338367462158,
-                    "z": -2.713268518447876
+                    "x": 0.02938690595328808,
+                    "y": 1.9658846855163574,
+                    "z": -2.710787534713745
                 },
                 "scale": {
                     "x": 0.9999995827674866,
                     "y": 0.9999995827674866,
-                    "z": 0.9999997615814209
+                    "z": 0.9999998807907104
                 },
                 "visible": false
             },
@@ -399,17 +399,17 @@
                 },
                 "base": {
                     "autoAdvance": true,
-                    "blend01": 0.0,
+                    "blend01": 0.754806637763977,
                     "clipA": "alice-Apose_arm|Idle",
-                    "clipB": "rig|Tia_Run",
+                    "clipB": "alice-Apose_arm|Swing",
                     "enabled": true,
                     "layerAlpha": 1.0,
                     "loopA": true,
-                    "loopB": true,
+                    "loopB": false,
                     "speedA": 1.0,
                     "speedB": 1.0,
-                    "timeA": 0.1348992884159088,
-                    "timeB": 0.0
+                    "timeA": 0.7284554243087769,
+                    "timeB": 0.30000001192092896
                 },
                 "enabled": true,
                 "ik": {
@@ -483,7 +483,7 @@
                 "slopeLimitRadians": 0.7853981852531433,
                 "stepOffset": 0.3499999940395355,
                 "teleport": false,
-                "verticalVelocity": -0.07607753574848175
+                "verticalVelocity": 0.0
             },
             "Health": {
                 "alive": true,
@@ -717,7 +717,7 @@
                 "enabled": true,
                 "position": {
                     "x": -0.715033233165741,
-                    "y": 0.029640674591064453,
+                    "y": 0.03164929151535034,
                     "z": -0.20856717228889465
                 },
                 "rotation": {
@@ -801,25 +801,25 @@
             "Transform": {
                 "enabled": true,
                 "position": {
-                    "x": -0.10266345739364624,
-                    "y": 0.8966095447540283,
-                    "z": -0.07753303647041321
+                    "x": -0.6669223308563232,
+                    "y": 1.55287766456604,
+                    "z": -0.17895236611366272
                 },
                 "rotation": {
-                    "x": 0.7393091320991516,
-                    "y": -0.7183325886726379,
-                    "z": -2.999829053878784
+                    "x": 0.2677076458930969,
+                    "y": -0.051977235823869705,
+                    "z": -1.1565717458724976
                 },
                 "scale": {
-                    "x": 1.0000005960464478,
-                    "y": 1.0000003576278687,
-                    "z": 1.000000238418579
+                    "x": 1.0000007152557373,
+                    "y": 1.000000238418579,
+                    "z": 1.000001072883606
                 },
                 "visible": true
             },
             "WeaponTrace": {
-                "active": false,
-                "attackInstanceId": 925,
+                "active": true,
+                "attackInstanceId": 1946,
                 "baseDamage": 10.0,
                 "debugDraw": true,
                 "guardBreakPushbackDuration": 0.25,
@@ -984,19 +984,19 @@
             "Transform": {
                 "enabled": true,
                 "position": {
-                    "x": -0.7065751552581787,
-                    "y": 1.3539419174194336,
-                    "z": -0.19935046136379242
+                    "x": -0.7297404408454895,
+                    "y": 1.2078015804290771,
+                    "z": -0.03808954358100891
                 },
                 "rotation": {
-                    "x": -0.045256201177835464,
-                    "y": -2.3559021949768066,
-                    "z": 0.0029934539925307035
+                    "x": -0.2690037488937378,
+                    "y": 2.9714455604553223,
+                    "z": 0.0976058766245842
                 },
                 "scale": {
-                    "x": 0.9999999403953552,
-                    "y": 0.9999995231628418,
-                    "z": 0.9999995827674866
+                    "x": 1.000000238418579,
+                    "y": 1.000000238418579,
+                    "z": 1.0000001192092896
                 },
                 "visible": false
             },
@@ -1079,19 +1079,19 @@
             "Transform": {
                 "enabled": true,
                 "position": {
-                    "x": -0.6991845369338989,
-                    "y": 1.041162133216858,
-                    "z": -0.19271846115589142
+                    "x": -0.7788200378417969,
+                    "y": 0.9026565551757813,
+                    "z": -0.1014334186911583
                 },
                 "rotation": {
-                    "x": 0.008996328338980675,
-                    "y": 0.7854317426681519,
-                    "z": -3.138327121734619
+                    "x": -0.02934705652296543,
+                    "y": 0.6900332570075989,
+                    "z": 3.113539218902588
                 },
                 "scale": {
-                    "x": 0.9999999403953552,
-                    "y": 0.9999995231628418,
-                    "z": 0.9999995827674866
+                    "x": 1.000000238418579,
+                    "y": 1.0000003576278687,
+                    "z": 1.0000001192092896
                 },
                 "visible": false
             },
@@ -1174,19 +1174,19 @@
             "Transform": {
                 "enabled": true,
                 "position": {
-                    "x": -0.5971963405609131,
-                    "y": 1.0521939992904663,
-                    "z": -0.3863077163696289
+                    "x": -0.6806274056434631,
+                    "y": 0.9753298759460449,
+                    "z": -0.33642250299453735
                 },
                 "rotation": {
-                    "x": 0.5864325165748596,
-                    "y": -0.8472582101821899,
-                    "z": -2.955259323120117
+                    "x": 0.4191703200340271,
+                    "y": 0.0553882010281086,
+                    "z": -1.0377506017684937
                 },
                 "scale": {
-                    "x": 1.0000004768371582,
-                    "y": 1.0000001192092896,
-                    "z": 1.000000238418579
+                    "x": 1.000000238418579,
+                    "y": 1.0000003576278687,
+                    "z": 1.0000003576278687
                 },
                 "visible": false
             },
@@ -1269,19 +1269,19 @@
             "Transform": {
                 "enabled": true,
                 "position": {
-                    "x": -0.8947262763977051,
-                    "y": 1.0534745454788208,
-                    "z": -0.0885215699672699
+                    "x": -0.6698411107063293,
+                    "y": 0.9459977149963379,
+                    "z": 0.03449675440788269
                 },
                 "rotation": {
-                    "x": -0.5923907160758972,
-                    "y": -0.7228972911834717,
-                    "z": -2.9548606872558594
+                    "x": -0.43892282247543335,
+                    "y": 0.292453408241272,
+                    "z": -1.3186614513397217
                 },
                 "scale": {
-                    "x": 0.9999998211860657,
-                    "y": 0.999999463558197,
-                    "z": 0.9999995827674866
+                    "x": 1.0000005960464478,
+                    "y": 1.0000009536743164,
+                    "z": 1.0000004768371582
                 },
                 "visible": false
             },
@@ -1364,19 +1364,19 @@
             "Transform": {
                 "enabled": true,
                 "position": {
-                    "x": -0.6388991475105286,
-                    "y": 0.5356767773628235,
-                    "z": -0.24645619094371796
+                    "x": -0.5980988144874573,
+                    "y": 0.4335523843765259,
+                    "z": -0.07355131208896637
                 },
                 "rotation": {
-                    "x": 0.2745521068572998,
-                    "y": 0.7922545075416565,
-                    "z": -3.0815324783325195
+                    "x": 0.6672908067703247,
+                    "y": 0.8388097286224365,
+                    "z": -2.8555285930633545
                 },
                 "scale": {
-                    "x": 1.0000039339065552,
-                    "y": 1.0000004768371582,
-                    "z": 1.0000004768371582
+                    "x": 1.0000042915344238,
+                    "y": 1.000001072883606,
+                    "z": 1.0000020265579224
                 },
                 "visible": false
             },
@@ -1459,19 +1459,19 @@
             "Transform": {
                 "enabled": true,
                 "position": {
-                    "x": -0.7564637064933777,
-                    "y": 0.538910448551178,
-                    "z": -0.09901530295610428
+                    "x": -0.8745783567428589,
+                    "y": 0.4780629575252533,
+                    "z": 0.1597539484500885
                 },
                 "rotation": {
-                    "x": 0.07409361004829407,
-                    "y": 0.7666648030281067,
-                    "z": 3.007986545562744
+                    "x": 0.19142760336399078,
+                    "y": 0.4114772379398346,
+                    "z": 2.6370656490325928
                 },
                 "scale": {
-                    "x": 1.0000044107437134,
-                    "y": 1.0000009536743164,
-                    "z": 1.0000004768371582
+                    "x": 1.000004529953003,
+                    "y": 1.0000014305114746,
+                    "z": 1.0000014305114746
                 },
                 "visible": false
             },
@@ -3854,9 +3854,9 @@
             "Transform": {
                 "enabled": true,
                 "position": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
+                    "x": -1.6817561388015747,
+                    "y": 0.6700000166893005,
+                    "z": -1.672096610069275
                 },
                 "rotation": {
                     "x": 0.0,
@@ -3875,7 +3875,7 @@
         },
         {
             "Camera": {
-                "FOV": 59.99993133544922,
+                "FOV": 59.99992370605469,
                 "Far Plane": 1000.0,
                 "Near Plane": 0.10000000149011612,
                 "aspectOverride": 0.0,
@@ -3922,7 +3922,7 @@
                 "maxDistance": 8.079999923706055,
                 "minDistance": 0.0,
                 "mode": 0,
-                "pitchDeg": 6.407087802886963,
+                "pitchDeg": 6.621736526489258,
                 "pitchMaxDeg": 80.0,
                 "pitchMinDeg": -45.0,
                 "positionDamping": 8.0,
@@ -3931,7 +3931,7 @@
                 "shoulderOffset": 0.0,
                 "shoulderSide": 1.0,
                 "targetName": "Player",
-                "yawDeg": -23.510334014892578
+                "yawDeg": 9.499489784240723
             },
             "CameraInput": {
                 "blendTimeKey3": 0.6000000238418579,
@@ -3961,7 +3961,7 @@
                 "frequency": 20.0
             },
             "CameraSpringArm": {
-                "distance": 1.0000007152557373,
+                "distance": 1.000001072883606,
                 "distanceDamping": 6.0,
                 "enableCollision": false,
                 "enableZoom": true,
@@ -4013,14 +4013,14 @@
             "Transform": {
                 "enabled": true,
                 "position": {
-                    "x": -4.73853874206543,
-                    "y": 1.3514243364334106,
-                    "z": -4.559204578399658
+                    "x": -2.7686078548431396,
+                    "y": 1.3553133010864258,
+                    "z": -11.56132698059082
                 },
                 "rotation": {
-                    "x": 0.11182478070259094,
-                    "y": -0.4103327691555023,
-                    "z": -7.450581485102248e-09
+                    "x": 0.11557111144065857,
+                    "y": 0.1657973825931549,
+                    "z": -1.8626449271863521e-09
                 },
                 "scale": {
                     "x": 1.0,
@@ -4051,7 +4051,7 @@
                 },
                 "base": {
                     "autoAdvance": true,
-                    "blend01": 0.0646258294582367,
+                    "blend01": 0.047860000282526016,
                     "clipA": "rig|Tia_IDLE",
                     "clipB": "rig|Tia_Normal_Attack_1",
                     "enabled": true,
@@ -4060,8 +4060,8 @@
                     "loopB": false,
                     "speedA": 1.0,
                     "speedB": 1.0,
-                    "timeA": 0.2460031658411026,
-                    "timeB": 0.007755099795758724
+                    "timeA": 0.7962545156478882,
+                    "timeB": 1.7916666269302368
                 },
                 "enabled": true,
                 "ik": {
@@ -4162,11 +4162,11 @@
                 "slopeLimitRadians": 0.7853981852531433,
                 "stepOffset": 0.3499999940395355,
                 "teleport": false,
-                "verticalVelocity": -0.07607753574848175
+                "verticalVelocity": 0.0
             },
             "Health": {
                 "alive": true,
-                "currentHealth": 80.0,
+                "currentHealth": 70.0,
                 "dodgeActive": false,
                 "dodgeAvoidedThisFrame": false,
                 "groggy": 0.0,
@@ -4179,18 +4179,18 @@
                 "hitThisFrame": false,
                 "invulnDuration": 0.0,
                 "invulnRemaining": 0.0,
-                "lastHitAttacker": 6,
-                "lastHitDamage": 0.0,
+                "lastHitAttacker": 55,
+                "lastHitDamage": 10.0,
                 "lastHitNormalWS": {
-                    "x": 0.4118615388870239,
-                    "y": 0.8046829700469971,
-                    "z": -0.42761585116386414
+                    "x": -0.5717869400978088,
+                    "y": 0.21093618869781494,
+                    "z": -0.7928214073181152
                 },
-                "lastHitPart": 31,
+                "lastHitPart": 11,
                 "lastHitPosWS": {
-                    "x": -0.08667947351932526,
-                    "y": 0.33066338300704956,
-                    "z": 0.9506237506866455
+                    "x": 0.09233025461435318,
+                    "y": 0.9495645761489868,
+                    "z": 0.20380482077598572
                 },
                 "maxHealth": 100.0,
                 "pushbackDir": {
@@ -4375,13 +4375,13 @@
             "Transform": {
                 "enabled": true,
                 "position": {
-                    "x": -5.135039806365967,
-                    "y": 0.05000025033950806,
-                    "z": -3.6479320526123047
+                    "x": -2.604667901992798,
+                    "y": 0.05000007152557373,
+                    "z": -10.581625938415527
                 },
                 "rotation": {
                     "x": 0.0,
-                    "y": 2.731260061264038,
+                    "y": 3.3073902130126953,
                     "z": 0.0
                 },
                 "scale": {
@@ -4475,9 +4475,9 @@
             "Transform": {
                 "enabled": true,
                 "position": {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
+                    "x": -1.6817561388015747,
+                    "y": 0.6700000166893005,
+                    "z": -1.672096610069275
                 },
                 "rotation": {
                     "x": 0.0,
@@ -5167,19 +5167,19 @@
             "Transform": {
                 "enabled": true,
                 "position": {
-                    "x": -5.149619102478027,
-                    "y": 0.9111713171005249,
-                    "z": -4.026913642883301
+                    "x": -2.8124496936798096,
+                    "y": 0.9113609790802002,
+                    "z": -10.843153953552246
                 },
                 "rotation": {
-                    "x": -0.05070098489522934,
-                    "y": 2.1403324604034424,
-                    "z": 2.0360753536224365
+                    "x": -0.051244109869003296,
+                    "y": 2.7131738662719727,
+                    "z": 2.0349700450897217
                 },
                 "scale": {
-                    "x": 1.0,
-                    "y": 0.9999999403953552,
-                    "z": 0.9999999403953552
+                    "x": 0.9999994039535522,
+                    "y": 0.9999994039535522,
+                    "z": 0.9999996423721313
                 },
                 "visible": false
             },
@@ -5317,25 +5317,25 @@
             "Transform": {
                 "enabled": true,
                 "position": {
-                    "x": -5.149619102478027,
-                    "y": 0.9111713171005249,
-                    "z": -4.026913642883301
+                    "x": -2.8124496936798096,
+                    "y": 0.9113609790802002,
+                    "z": -10.843153953552246
                 },
                 "rotation": {
-                    "x": -0.05070098489522934,
-                    "y": 2.1403324604034424,
-                    "z": 2.0360753536224365
+                    "x": -0.051244109869003296,
+                    "y": 2.7131738662719727,
+                    "z": 2.0349700450897217
                 },
                 "scale": {
-                    "x": 1.0,
-                    "y": 0.9999999403953552,
-                    "z": 0.9999999403953552
+                    "x": 0.9999994039535522,
+                    "y": 0.9999994039535522,
+                    "z": 0.9999996423721313
                 },
                 "visible": true
             },
             "WeaponTrace": {
                 "active": false,
-                "attackInstanceId": 326,
+                "attackInstanceId": 497,
                 "baseDamage": 10.0,
                 "debugDraw": true,
                 "guardBreakPushbackDuration": 0.25,
@@ -5664,7 +5664,7 @@
                 "minValue": 0.0,
                 "normalized": true,
                 "smoothing": 0.0,
-                "value": 0.800000011920929
+                "value": 0.699999988079071
             },
             "UITransform": {
                 "alignH": "Center",
@@ -5983,16 +5983,16 @@
                 "alignH": "Left",
                 "alignV": "Top",
                 "color": {
-                    "w": 0.3499999940395355,
-                    "x": 0.8999999761581421,
-                    "y": 0.8999999761581421,
-                    "z": 0.8999999761581421
+                    "w": 1.0,
+                    "x": 0.20000000298023224,
+                    "y": 1.0,
+                    "z": 0.4000000059604645
                 },
                 "fontPath": "Resource/Fonts/NotoSansKR-Regular.ttf",
-                "fontSize": 26.0,
+                "fontSize": 32.0,
                 "lineSpacing": 0.0,
                 "maxWidth": 0.0,
-                "text": "None",
+                "text": "Attack",
                 "wrap": false
             },
             "UITransform": {
@@ -6458,13 +6458,13 @@
                 "alignH": "Left",
                 "alignV": "Top",
                 "color": {
-                    "w": 1.0,
-                    "x": 1.0,
+                    "w": 0.3499999940395355,
+                    "x": 0.8999999761581421,
                     "y": 0.8999999761581421,
-                    "z": 0.20000000298023224
+                    "z": 0.8999999761581421
                 },
                 "fontPath": "Resource/Fonts/NotoSansKR-Regular.ttf",
-                "fontSize": 34.0,
+                "fontSize": 26.0,
                 "lineSpacing": 0.0,
                 "maxWidth": 0.0,
                 "text": "Idle",
@@ -6618,13 +6618,13 @@
                 "alignH": "Left",
                 "alignV": "Top",
                 "color": {
-                    "w": 0.3499999940395355,
-                    "x": 0.8999999761581421,
+                    "w": 1.0,
+                    "x": 1.0,
                     "y": 0.8999999761581421,
-                    "z": 0.8999999761581421
+                    "z": 0.20000000298023224
                 },
                 "fontPath": "Resource/Fonts/NotoSansKR-Regular.ttf",
-                "fontSize": 26.0,
+                "fontSize": 34.0,
                 "lineSpacing": 0.0,
                 "maxWidth": 0.0,
                 "text": "Attack",
@@ -6865,6 +6865,26 @@
                 "toonPbrStrength": 1.0,
                 "transparent": false
             },
+            "RigidBody": {
+                "angularDamping": 0.05000000074505806,
+                "density": 1.0,
+                "enableCCD": false,
+                "enableSpeculativeCCD": false,
+                "gravityEnabled": false,
+                "isKinematic": true,
+                "linearDamping": 0.0,
+                "lockFlags": "None",
+                "massOverride": 0.0,
+                "maxAngularVelocity": 0.0,
+                "maxLinearVelocity": 0.0,
+                "resetVelocityOnTeleport": true,
+                "sleepThreshold": -1.0,
+                "solverPositionIterations": 4,
+                "solverVelocityIterations": 1,
+                "stabilizationThreshold": -1.0,
+                "startAwake": true,
+                "teleport": false
+            },
             "SkinnedAnimation": {
                 "clipIndex": 0,
                 "playing": true,
@@ -6872,15 +6892,95 @@
                 "timeSec": 0.0
             },
             "SkinnedMesh": {
-                "boneCount": 1,
+                "boneCount": 5,
                 "instanceAssetPath": "Assets/Fbx/Tia_Ribbon.fbxasset",
                 "meshAssetPath": "Tia_Ribbon"
+            },
+            "Socket": {
+                "sockets": [
+                    {
+                        "name": "LeftDown",
+                        "parentBone": "ribbon_left_02",
+                        "position": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "rotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        }
+                    },
+                    {
+                        "name": "RightDown",
+                        "parentBone": "ribbon_right_02",
+                        "position": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "rotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        }
+                    },
+                    {
+                        "name": "LeftUp",
+                        "parentBone": "ribbon_left_01",
+                        "position": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "rotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        }
+                    },
+                    {
+                        "name": "RightUp",
+                        "parentBone": "ribbon_right_01",
+                        "position": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "rotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        }
+                    }
+                ]
             },
             "SocketAttachment": {
                 "extraPos": {
                     "x": 0.0,
-                    "y": -0.029999999329447746,
-                    "z": 0.05000000074505806
+                    "y": 0.0,
+                    "z": 0.0
                 },
                 "extraRotRad": {
                     "x": 0.0,
@@ -6900,24 +7000,722 @@
             "Transform": {
                 "enabled": true,
                 "position": {
-                    "x": -5.104843616485596,
-                    "y": 0.9468315243721008,
-                    "z": -3.7572579383850098
+                    "x": -2.616764545440674,
+                    "y": 0.9748016595840454,
+                    "z": -10.59081745147705
                 },
                 "rotation": {
-                    "x": -0.030942969024181366,
-                    "y": 2.8336684703826904,
-                    "z": 0.00140824681147933
+                    "x": -0.03126015141606331,
+                    "y": -2.888127088546753,
+                    "z": 0.0013555123005062342
                 },
                 "scale": {
-                    "x": 1.000000238418579,
-                    "y": 0.9999997019767761,
-                    "z": 1.0000001192092896
+                    "x": 0.9999995827674866,
+                    "y": 0.9999992251396179,
+                    "z": 0.9999994039535522
                 },
                 "visible": true
             },
             "guid": "8855580326135297683",
             "name": "TiaRibbon"
+        },
+        {
+            "BonePhysicsProxy": {
+                "boneIndex": 0,
+                "boneName": "ribbon_right_01",
+                "enabled": true,
+                "ownerGuid": "8855580326135297683",
+                "ownerNameDebug": "TiaRibbon"
+            },
+            "Collider": {
+                "capsuleAlignYAxis": true,
+                "capsuleHalfHeight": 0.5,
+                "capsuleRadius": 0.5,
+                "debugDraw": false,
+                "dynamicFriction": 0.5,
+                "halfExtents": {
+                    "x": 0.009999999776482582,
+                    "y": 0.009999999776482582,
+                    "z": 0.009999999776482582
+                },
+                "ignoreLayers": 0,
+                "isTrigger": true,
+                "layerBits": 1,
+                "offset": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "radius": 0.009999999776482582,
+                "restitution": 0.0,
+                "staticFriction": 0.5,
+                "type": "Sphere"
+            },
+            "RigidBody": {
+                "angularDamping": 0.05000000074505806,
+                "density": 1.0,
+                "enableCCD": false,
+                "enableSpeculativeCCD": false,
+                "gravityEnabled": false,
+                "isKinematic": true,
+                "linearDamping": 0.0,
+                "lockFlags": "None",
+                "massOverride": 0.0,
+                "maxAngularVelocity": 0.0,
+                "maxLinearVelocity": 0.0,
+                "resetVelocityOnTeleport": true,
+                "sleepThreshold": -1.0,
+                "solverPositionIterations": 4,
+                "solverVelocityIterations": 1,
+                "stabilizationThreshold": -1.0,
+                "startAwake": true,
+                "teleport": false
+            },
+            "SocketAttachment": {
+                "extraPos": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "extraRotRad": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "extraScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "followScale": true,
+                "ownerGuid": "8855580326135297683",
+                "ownerNameDebug": "TiaRibbon",
+                "socketName": "RightUp"
+            },
+            "Transform": {
+                "enabled": true,
+                "position": {
+                    "x": -2.6260204315185547,
+                    "y": 1.8833565711975098,
+                    "z": -10.63187026977539
+                },
+                "rotation": {
+                    "x": 0.8066230416297913,
+                    "y": -0.7769621014595032,
+                    "z": 2.9126455783843994
+                },
+                "scale": {
+                    "x": 0.999999463558197,
+                    "y": 0.9999994039535522,
+                    "z": 0.9999995231628418
+                },
+                "visible": false
+            },
+            "guid": "17000000000000000001",
+            "name": "RibbonAnchorR"
+        },
+        {
+            "BonePhysicsProxy": {
+                "boneIndex": 0,
+                "boneName": "ribbon_left_01",
+                "enabled": true,
+                "ownerGuid": "8855580326135297683",
+                "ownerNameDebug": "TiaRibbon"
+            },
+            "Collider": {
+                "capsuleAlignYAxis": true,
+                "capsuleHalfHeight": 0.5,
+                "capsuleRadius": 0.5,
+                "debugDraw": false,
+                "dynamicFriction": 0.5,
+                "halfExtents": {
+                    "x": 0.009999999776482582,
+                    "y": 0.009999999776482582,
+                    "z": 0.009999999776482582
+                },
+                "ignoreLayers": 0,
+                "isTrigger": true,
+                "layerBits": 1,
+                "offset": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "radius": 0.009999999776482582,
+                "restitution": 0.0,
+                "staticFriction": 0.5,
+                "type": "Sphere"
+            },
+            "RigidBody": {
+                "angularDamping": 0.05000000074505806,
+                "density": 1.0,
+                "enableCCD": false,
+                "enableSpeculativeCCD": false,
+                "gravityEnabled": false,
+                "isKinematic": true,
+                "linearDamping": 0.0,
+                "lockFlags": "None",
+                "massOverride": 0.0,
+                "maxAngularVelocity": 0.0,
+                "maxLinearVelocity": 0.0,
+                "resetVelocityOnTeleport": true,
+                "sleepThreshold": -1.0,
+                "solverPositionIterations": 4,
+                "solverVelocityIterations": 1,
+                "stabilizationThreshold": -1.0,
+                "startAwake": true,
+                "teleport": false
+            },
+            "SocketAttachment": {
+                "extraPos": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "extraRotRad": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "extraScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "followScale": true,
+                "ownerGuid": "8855580326135297683",
+                "ownerNameDebug": "TiaRibbon",
+                "socketName": "LeftUp"
+            },
+            "Transform": {
+                "enabled": true,
+                "position": {
+                    "x": -2.6260204315185547,
+                    "y": 1.8833565711975098,
+                    "z": -10.63187026977539
+                },
+                "rotation": {
+                    "x": 0.7537804245948792,
+                    "y": 1.2322190999984741,
+                    "z": -2.9024851322174072
+                },
+                "scale": {
+                    "x": 0.999999463558197,
+                    "y": 0.9999993443489075,
+                    "z": 0.9999995231628418
+                },
+                "visible": false
+            },
+            "guid": "17000000000000000002",
+            "name": "RibbonAnchorL"
+        },
+        {
+            "BonePhysicsProxy": {
+                "boneIndex": 0,
+                "boneName": "ribbon_right_02",
+                "enabled": true,
+                "ownerGuid": "8855580326135297683",
+                "ownerNameDebug": "TiaRibbon"
+            },
+            "Collider": {
+                "capsuleAlignYAxis": true,
+                "capsuleHalfHeight": 0.5,
+                "capsuleRadius": 0.5,
+                "debugDraw": true,
+                "dynamicFriction": 0.5,
+                "halfExtents": {
+                    "x": 0.10000000149011612,
+                    "y": 0.009999999776482582,
+                    "z": 0.009999999776482582
+                },
+                "ignoreLayers": 0,
+                "isTrigger": false,
+                "layerBits": 1,
+                "offset": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "radius": 0.009999999776482582,
+                "restitution": 0.0,
+                "staticFriction": 0.5,
+                "type": "Sphere"
+            },
+            "Joint": {
+                "breakForce": 0.0,
+                "breakTorque": 0.0,
+                "collideConnected": false,
+                "d6": {
+                    "driveAngularVelocity": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "driveLimitsAreForces": true,
+                    "driveLinearVelocity": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "drivePose": {
+                        "position": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "rotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        }
+                    },
+                    "driveSlerp": {
+                        "damping": 0.0,
+                        "forceLimit": 0.0,
+                        "isAcceleration": false,
+                        "stiffness": 0.0
+                    },
+                    "driveSwing": {
+                        "damping": 0.0,
+                        "forceLimit": 0.0,
+                        "isAcceleration": false,
+                        "stiffness": 0.0
+                    },
+                    "driveTwist": {
+                        "damping": 0.0,
+                        "forceLimit": 0.0,
+                        "isAcceleration": false,
+                        "stiffness": 0.0
+                    },
+                    "driveX": {
+                        "damping": 0.0,
+                        "forceLimit": 0.0,
+                        "isAcceleration": false,
+                        "stiffness": 0.0
+                    },
+                    "driveY": {
+                        "damping": 0.0,
+                        "forceLimit": 0.0,
+                        "isAcceleration": false,
+                        "stiffness": 0.0
+                    },
+                    "driveZ": {
+                        "damping": 0.0,
+                        "forceLimit": 0.0,
+                        "isAcceleration": false,
+                        "stiffness": 0.0
+                    },
+                    "linearLimitX": {
+                        "bounceThreshold": -1.0,
+                        "damping": 0.0,
+                        "lower": -1.0,
+                        "restitution": -1.0,
+                        "stiffness": 0.0,
+                        "upper": 1.0
+                    },
+                    "linearLimitY": {
+                        "bounceThreshold": -1.0,
+                        "damping": 0.0,
+                        "lower": -1.0,
+                        "restitution": -1.0,
+                        "stiffness": 0.0,
+                        "upper": 1.0
+                    },
+                    "linearLimitZ": {
+                        "bounceThreshold": -1.0,
+                        "damping": 0.0,
+                        "lower": -1.0,
+                        "restitution": -1.0,
+                        "stiffness": 0.0,
+                        "upper": 1.0
+                    },
+                    "motionSwing1": "Locked",
+                    "motionSwing2": "Locked",
+                    "motionTwist": "Locked",
+                    "motionX": "Locked",
+                    "motionY": "Locked",
+                    "motionZ": "Locked",
+                    "swingLimit": {
+                        "bounceThreshold": -1.0,
+                        "damping": 0.0,
+                        "restitution": -1.0,
+                        "stiffness": 0.0,
+                        "yAngle": 1.570796251296997,
+                        "zAngle": 1.570796251296997
+                    },
+                    "twistLimit": {
+                        "bounceThreshold": -1.0,
+                        "damping": 0.0,
+                        "lower": -3.1415927410125732,
+                        "restitution": -1.0,
+                        "stiffness": 0.0,
+                        "upper": 3.1415927410125732
+                    }
+                },
+                "distance": {
+                    "damping": 6.0,
+                    "enableMaxDistance": true,
+                    "enableMinDistance": true,
+                    "enableSpring": true,
+                    "maxDistance": 0.25,
+                    "minDistance": 0.25,
+                    "stiffness": 80.0,
+                    "tolerance": 0.0
+                },
+                "frameA": {
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "rotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    }
+                },
+                "frameB": {
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "rotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    }
+                },
+                "prismatic": {
+                    "enableLimit": false,
+                    "limitBounceThreshold": -1.0,
+                    "limitDamping": 0.0,
+                    "limitRestitution": -1.0,
+                    "limitStiffness": 0.0,
+                    "lowerLimit": -1.0,
+                    "upperLimit": 1.0
+                },
+                "revolute": {
+                    "driveForceLimit": 0.0,
+                    "driveFreeSpin": false,
+                    "driveLimitsAreForces": true,
+                    "driveVelocity": 0.0,
+                    "enableDrive": false,
+                    "enableLimit": false,
+                    "limitBounceThreshold": -1.0,
+                    "limitDamping": 0.0,
+                    "limitRestitution": -1.0,
+                    "limitStiffness": 0.0,
+                    "lowerLimit": -3.1415927410125732,
+                    "upperLimit": 3.1415927410125732
+                },
+                "spherical": {
+                    "enableLimit": false,
+                    "limitBounceThreshold": -1.0,
+                    "limitDamping": 0.0,
+                    "limitRestitution": -1.0,
+                    "limitStiffness": 0.0,
+                    "yLimitAngle": 1.570796251296997,
+                    "zLimitAngle": 1.570796251296997
+                },
+                "targetName": "RibbonAnchorR",
+                "type": "Distance"
+            },
+            "RigidBody": {
+                "angularDamping": 0.05000000074505806,
+                "density": 1.0,
+                "enableCCD": false,
+                "enableSpeculativeCCD": false,
+                "gravityEnabled": true,
+                "isKinematic": false,
+                "linearDamping": 0.0,
+                "lockFlags": "None",
+                "massOverride": 0.0,
+                "maxAngularVelocity": 0.0,
+                "maxLinearVelocity": 0.0,
+                "resetVelocityOnTeleport": true,
+                "sleepThreshold": -1.0,
+                "solverPositionIterations": 4,
+                "solverVelocityIterations": 1,
+                "stabilizationThreshold": -1.0,
+                "startAwake": true,
+                "teleport": false
+            },
+            "Transform": {
+                "enabled": true,
+                "position": {
+                    "x": -3.7336530685424805,
+                    "y": 2.199570894241333,
+                    "z": -7.827298641204834
+                },
+                "rotation": {
+                    "x": 0.04241316765546799,
+                    "y": 3.1027235984802246,
+                    "z": -2.0283448696136475
+                },
+                "scale": {
+                    "x": 1.0000007152557373,
+                    "y": 1.0000004768371582,
+                    "z": 1.0000007152557373
+                },
+                "visible": false
+            },
+            "guid": "15005878959860263987",
+            "name": "RibbonR"
+        },
+        {
+            "BonePhysicsProxy": {
+                "boneIndex": 0,
+                "boneName": "ribbon_left_02",
+                "enabled": true,
+                "ownerGuid": "8855580326135297683",
+                "ownerNameDebug": "TiaRibbon"
+            },
+            "Collider": {
+                "capsuleAlignYAxis": true,
+                "capsuleHalfHeight": 0.5,
+                "capsuleRadius": 0.5,
+                "debugDraw": true,
+                "dynamicFriction": 0.5,
+                "halfExtents": {
+                    "x": 0.009999999776482582,
+                    "y": 0.009999999776482582,
+                    "z": 0.009999999776482582
+                },
+                "ignoreLayers": 0,
+                "isTrigger": false,
+                "layerBits": 1,
+                "offset": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "radius": 0.009999999776482582,
+                "restitution": 0.0,
+                "staticFriction": 0.5,
+                "type": "Sphere"
+            },
+            "Joint": {
+                "breakForce": 0.0,
+                "breakTorque": 0.0,
+                "collideConnected": false,
+                "d6": {
+                    "driveAngularVelocity": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "driveLimitsAreForces": true,
+                    "driveLinearVelocity": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "drivePose": {
+                        "position": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "rotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        }
+                    },
+                    "driveSlerp": {
+                        "damping": 0.0,
+                        "forceLimit": 0.0,
+                        "isAcceleration": false,
+                        "stiffness": 0.0
+                    },
+                    "driveSwing": {
+                        "damping": 0.0,
+                        "forceLimit": 0.0,
+                        "isAcceleration": false,
+                        "stiffness": 0.0
+                    },
+                    "driveTwist": {
+                        "damping": 0.0,
+                        "forceLimit": 0.0,
+                        "isAcceleration": false,
+                        "stiffness": 0.0
+                    },
+                    "driveX": {
+                        "damping": 0.0,
+                        "forceLimit": 0.0,
+                        "isAcceleration": false,
+                        "stiffness": 0.0
+                    },
+                    "driveY": {
+                        "damping": 0.0,
+                        "forceLimit": 0.0,
+                        "isAcceleration": false,
+                        "stiffness": 0.0
+                    },
+                    "driveZ": {
+                        "damping": 0.0,
+                        "forceLimit": 0.0,
+                        "isAcceleration": false,
+                        "stiffness": 0.0
+                    },
+                    "linearLimitX": {
+                        "bounceThreshold": -1.0,
+                        "damping": 0.0,
+                        "lower": -1.0,
+                        "restitution": -1.0,
+                        "stiffness": 0.0,
+                        "upper": 1.0
+                    },
+                    "linearLimitY": {
+                        "bounceThreshold": -1.0,
+                        "damping": 0.0,
+                        "lower": -1.0,
+                        "restitution": -1.0,
+                        "stiffness": 0.0,
+                        "upper": 1.0
+                    },
+                    "linearLimitZ": {
+                        "bounceThreshold": -1.0,
+                        "damping": 0.0,
+                        "lower": -1.0,
+                        "restitution": -1.0,
+                        "stiffness": 0.0,
+                        "upper": 1.0
+                    },
+                    "motionSwing1": "Locked",
+                    "motionSwing2": "Locked",
+                    "motionTwist": "Locked",
+                    "motionX": "Locked",
+                    "motionY": "Locked",
+                    "motionZ": "Locked",
+                    "swingLimit": {
+                        "bounceThreshold": -1.0,
+                        "damping": 0.0,
+                        "restitution": -1.0,
+                        "stiffness": 0.0,
+                        "yAngle": 1.570796251296997,
+                        "zAngle": 1.570796251296997
+                    },
+                    "twistLimit": {
+                        "bounceThreshold": -1.0,
+                        "damping": 0.0,
+                        "lower": -3.1415927410125732,
+                        "restitution": -1.0,
+                        "stiffness": 0.0,
+                        "upper": 3.1415927410125732
+                    }
+                },
+                "distance": {
+                    "damping": 6.0,
+                    "enableMaxDistance": true,
+                    "enableMinDistance": true,
+                    "enableSpring": true,
+                    "maxDistance": 0.25,
+                    "minDistance": 0.25,
+                    "stiffness": 80.0,
+                    "tolerance": 0.0
+                },
+                "frameA": {
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "rotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    }
+                },
+                "frameB": {
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "rotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    }
+                },
+                "prismatic": {
+                    "enableLimit": false,
+                    "limitBounceThreshold": -1.0,
+                    "limitDamping": 0.0,
+                    "limitRestitution": -1.0,
+                    "limitStiffness": 0.0,
+                    "lowerLimit": -1.0,
+                    "upperLimit": 1.0
+                },
+                "revolute": {
+                    "driveForceLimit": 0.0,
+                    "driveFreeSpin": false,
+                    "driveLimitsAreForces": true,
+                    "driveVelocity": 0.0,
+                    "enableDrive": false,
+                    "enableLimit": false,
+                    "limitBounceThreshold": -1.0,
+                    "limitDamping": 0.0,
+                    "limitRestitution": -1.0,
+                    "limitStiffness": 0.0,
+                    "lowerLimit": -3.1415927410125732,
+                    "upperLimit": 3.1415927410125732
+                },
+                "spherical": {
+                    "enableLimit": false,
+                    "limitBounceThreshold": -1.0,
+                    "limitDamping": 0.0,
+                    "limitRestitution": -1.0,
+                    "limitStiffness": 0.0,
+                    "yLimitAngle": 1.570796251296997,
+                    "zLimitAngle": 1.570796251296997
+                },
+                "targetName": "RibbonAnchorL",
+                "type": "Distance"
+            },
+            "RigidBody": {
+                "angularDamping": 0.05000000074505806,
+                "density": 1.0,
+                "enableCCD": false,
+                "enableSpeculativeCCD": false,
+                "gravityEnabled": true,
+                "isKinematic": false,
+                "linearDamping": 0.0,
+                "lockFlags": "None",
+                "massOverride": 0.0,
+                "maxAngularVelocity": 0.0,
+                "maxLinearVelocity": 0.0,
+                "resetVelocityOnTeleport": true,
+                "sleepThreshold": -1.0,
+                "solverPositionIterations": 4,
+                "solverVelocityIterations": 1,
+                "stabilizationThreshold": -1.0,
+                "startAwake": true,
+                "teleport": false
+            },
+            "Transform": {
+                "enabled": true,
+                "position": {
+                    "x": -4.153128147125244,
+                    "y": 3.043642997741699,
+                    "z": -7.919332027435303
+                },
+                "rotation": {
+                    "x": 0.5666475296020508,
+                    "y": 2.198878288269043,
+                    "z": 0.867688000202179
+                },
+                "scale": {
+                    "x": 1.0000001192092896,
+                    "y": 1.0000004768371582,
+                    "z": 1.0000004768371582
+                },
+                "visible": false
+            },
+            "guid": "3506742617436502538",
+            "name": "RibbonL"
         }
     ],
     "sceneName": "#00ProtoCombat",

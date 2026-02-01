@@ -17,6 +17,7 @@
 #include "Runtime/Gameplay/Sockets/SocketComponent.h"
 #include "Runtime/ECS/Components/TransformComponent.h"
 #include "Runtime/Gameplay/Animation/AnimBlueprintAsset.h"
+#include "Runtime/Gameplay/Animation/BonePhysicsOverride.h"
 #include "Runtime/Rendering/SkinnedMeshRegistry.h"
 #include "Runtime/Importing/FbxAnimation.h"
 #include "Runtime/Importing/FbxModel.h"
@@ -117,6 +118,7 @@ namespace Alice
                     animComp = &world.AddComponent<SkinnedAnimationComponent>(entityId);
 
                 animComp->palette = rt.blended;
+                BonePhysicsOverride::Apply(world, entityId, *mesh->sourceModel, animComp->palette);
                 if (auto* skinnedWrite = world.GetComponent<SkinnedMeshComponent>(entityId))
                 {
                     skinnedWrite->boneMatrices = animComp->palette.data();
