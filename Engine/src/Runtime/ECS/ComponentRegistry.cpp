@@ -1246,7 +1246,7 @@ namespace Alice
         r.Register<SkinnedAnimationComponent>("Skinned Animation", "Rendering");
         r.Register<AdvancedAnimationComponent>("Advanced Animation", "Rendering");
         r.Register<AnimBlueprintComponent>("Anim Blueprint", "Rendering");
-        r.Register<BonePhysicsProxyComponent>("Bone Physics Proxy", "Animation");
+        r.Register<BonePhysicsProxyComponent>("Bone Physics Proxy", "Rendering");
         r.Register<SocketComponent>("Socket", "Rendering");
 
         r.Register<CameraComponent>("Camera", "Camera");

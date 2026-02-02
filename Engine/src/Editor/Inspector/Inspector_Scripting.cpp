@@ -1,7 +1,9 @@
 #include "Editor/Core/EditorCore.h"
 #include "Editor/Core/EditorUIState.h"
 #include "Runtime/Scripting/ScriptFactory.h"
+#include "Runtime/ECS/EditorComponentRegistry.h"
 #include "Runtime/ECS/Components/TransformComponent.h"
+#include "Runtime/Gameplay/Animation/BonePhysicsProxyComponent.h"
 #include <algorithm>
 #include <cctype>
 #include <vector>
@@ -10,6 +12,20 @@ namespace Alice
 {
 	namespace
 	{
+		void EnsureBonePhysicsProxyRegistered()
+		{
+			static bool done = false;
+			if (done) return;
+			done = true;
+
+			auto& reg = EditorComponentRegistry::Get();
+			if (!reg.Find(rttr::type::get<BonePhysicsProxyComponent>()))
+			{
+				reg.Register<BonePhysicsProxyComponent>("Bone Physics Proxy", "Rendering");
+				reg.SortByCategoryThenName();
+			}
+		}
+
 		ReflectionUI::UIEditEvent RenderInspectorInstance(rttr::instance inst, World* world)
 		{
 			ReflectionUI::UIEditEvent result{};
@@ -40,6 +56,8 @@ namespace Alice
 
 	void EditorCore::DrawInspectorScripts(World& world, const EntityId& _selectedEntity)
 	{
+		EnsureBonePhysicsProxyRegistered();
+
 		static std::vector<std::string> scriptNames;
 		if (ImGui::BeginCombo("Add Script", "Select Script...")) {
 			if (scriptNames.empty() || m_scriptBuilded) {
@@ -209,6 +227,11 @@ namespace Alice
 			else if (typeName == "SocketComponent")
 			{
 				DrawInspectorSocketComponent(world, _selectedEntity);
+				continue;
+			}
+			else if (typeName == "BonePhysicsProxyComponent")
+			{
+				DrawInspectorBonePhysicsProxy(world, _selectedEntity);
 				continue;
 			}
 			// 일반 컴포넌트: 레지스트리 기반 렌더링

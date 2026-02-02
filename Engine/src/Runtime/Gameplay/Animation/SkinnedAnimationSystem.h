@@ -111,43 +111,7 @@ namespace Alice
                 }
                 else
                 {
-                    const std::string entityName = world.GetEntityName(entityId);
-                    if (entityName != "TiaRibbon") // TODO: 나중에 유연하게 바꿔줘야함, 일단 리본에만 적용시킬려고 하드코딩함
-                        continue;
-
-                    // 애니메이션 클립이 없어도 바인드 포즈 팔레트를 만들어 스킨ning을 유지한다.
-                    const auto& boneNames = mesh->sourceModel->GetBoneNames();
-                    const auto& boneOffsets = mesh->sourceModel->GetBoneOffsets();
-                    const auto& nodeIndexOfName = mesh->sourceModel->GetNodeIndexOfName();
-
-                    // 바인드 포즈 글로벌 행렬 평가 (채널 없음 -> node->mTransformation 기반)
-                    rt.anim.EvaluateGlobals(mesh->sourceModel->GetScenePtr(), nodeIndexOfName, rt.globals);
-
-                    static const DirectX::XMFLOAT4X4 s_identity{
-                        1,0,0,0,
-                        0,1,0,0,
-                        0,0,1,0,
-                        0,0,0,1
-                    };
-
-                    animComp->palette.assign(boneNames.size(), s_identity);
-                    const DirectX::XMMATRIX globalInv = DirectX::XMLoadFloat4x4(&mesh->sourceModel->GetGlobalInverse());
-
-                    for (size_t bi = 0; bi < boneNames.size(); ++bi)
-                    {
-                        auto itN = nodeIndexOfName.find(boneNames[bi]);
-                        if (itN == nodeIndexOfName.end())
-                            continue;
-
-                        const int nodeIdx = itN->second;
-                        if (nodeIdx < 0 || (size_t)nodeIdx >= rt.globals.size())
-                            continue;
-
-                        DirectX::XMMATRIX G = DirectX::XMLoadFloat4x4(&rt.globals[(size_t)nodeIdx]);
-                        DirectX::XMMATRIX Off = DirectX::XMLoadFloat4x4(&boneOffsets[bi]);
-                        DirectX::XMMATRIX skin = DirectX::XMMatrixMultiply(DirectX::XMMatrixMultiply(globalInv, G), Off);
-                        DirectX::XMStoreFloat4x4(&animComp->palette[bi], skin);
-                    }
+                    continue;
                 }
 
                 // Row-major로 변환 (렌더 시스템에서 다시 전치)

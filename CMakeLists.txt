@@ -108,6 +108,7 @@ set(ENGINE_SOURCES
     ${ALICE_SRC_DIR}/Editor/Inspector/Inspector_Camera.cpp
     ${ALICE_SRC_DIR}/Editor/Inspector/Inspector_Combat.cpp
     ${ALICE_SRC_DIR}/Editor/Inspector/Inspector_Socket.cpp
+    ${ALICE_SRC_DIR}/Editor/Inspector/Inspector_BonePhysicsProxy.cpp
     ${ALICE_SRC_DIR}/Editor/Panels/ProjectPanel.cpp
     ${ALICE_SRC_DIR}/Editor/Panels/GameViewportPanel.cpp
     ${ALICE_SRC_DIR}/Editor/Panels/CameraPanel.cpp
