@@ -2,6 +2,7 @@
 
 #include <cstdint>
 #include <string>
+#include <DirectXMath.h>
 
 #include "Runtime/ECS/Entity.h"
 
@@ -21,5 +22,15 @@ namespace Alice
 
         std::string boneName;
         int boneIndex = -1;
+
+        // Runtime-only calibration (not serialized)
+        bool hasProxyToBone = false;
+        int cachedBoneIndex = -1;
+        DirectX::XMFLOAT4X4 proxyToBone {
+            1,0,0,0,
+            0,1,0,0,
+            0,0,1,0,
+            0,0,0,1
+        };
     };
 }

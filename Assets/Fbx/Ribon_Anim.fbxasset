@@ -1,0 +1,7 @@
+{
+    "materials": [
+        "Assets/Materials/Ribon_Anim_0.mat"
+    ],
+    "mesh": "Ribon_Anim",
+    "source_fbx": "Resource/Test/4_Resources/Handmaid/Ribon_Anim.fbx"
+}
